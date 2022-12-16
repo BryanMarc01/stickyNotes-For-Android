@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.kreative.ui.pantalla_p;
 import com.facebook.login.LoginManager;
 
 public class Principal extends AppCompatActivity {
@@ -44,7 +43,7 @@ private Handler mHandler = new Handler();
                     @Override
                     public void run() {
                         MLoading.setVisibility(View.VISIBLE);
-                        Intent i= new Intent(getApplicationContext(), pantalla_p.class);
+                        Intent i= new Intent(getApplicationContext(), InicioActivity.class);
                         getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(i);
                         overridePendingTransition(R.anim.fade_in,R.anim.fade_out);

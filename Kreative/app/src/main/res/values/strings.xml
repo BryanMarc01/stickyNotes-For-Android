@@ -13,14 +13,14 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Presta+</string>
+    <string name="nav_header_subtitle">Tu diario de prestamos</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_transform">Transform</string>
     <string name="menu_reflow">Reflow</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_registro">Registrar Prestamos</string>
     <string name="menu_settings">Settings</string>
     <string name="facebook_app_id">766864588037580</string>
     <string name="fb_login_protocol_scheme">fb766864588037580</string>
@@ -74,5 +74,9 @@
     <string name="title_home">Perfil</string>
     <string name="title_dashboard">Inicio</string>
     <string name="title_notifications">Servicios</string>
+    <string name="title_activity_inicio">Inicio</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_pendientes">Ver pagos pendientes</string>
 
 </resources>

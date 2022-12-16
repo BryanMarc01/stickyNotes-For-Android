@@ -15,7 +15,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kreative.NoActionBar">
-        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <activity
+            android:name=".InicioActivity"
+            android:exported="false"
+            android:label="@string/title_activity_inicio"
+            android:theme="@style/Theme.Kreative.NoActionBar.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Inicio"
+            android:exported="false"
+            android:label="@string/title_activity_inicio"
+            android:theme="@style/Theme.Kreative.NoActionBar.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-9330492873927179~1707329808" />
@@ -35,10 +52,6 @@
             android:screenOrientation="fullSensor" />
         <activity
             android:name=".Principal"
-            android:exported="false"
-            android:screenOrientation="fullSensor" />
-        <activity
-            android:name=".ui.pantalla_p"
             android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity
