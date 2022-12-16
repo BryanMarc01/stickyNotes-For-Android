@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.kreative.Mapa;
-import com.example.kreative.Principalcontent;
 import com.example.kreative.R;
 import com.facebook.login.LoginManager;
 
