@@ -43,7 +43,7 @@ private Handler mHandler = new Handler();
                     @Override
                     public void run() {
                         MLoading.setVisibility(View.VISIBLE);
-                        Intent i= new Intent(getApplicationContext(), InicioActivity.class);
+                        Intent i= new Intent(getApplicationContext(), MainActivity2.class);
                         getIntent().addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(i);
                         overridePendingTransition(R.anim.fade_in,R.anim.fade_out);

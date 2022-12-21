@@ -19,6 +19,7 @@ import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
+import com.facebook.LoginStatusCallback;
 import com.facebook.appevents.AppEventsLogger;
 
 
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
     private GoogleSignInClient mGoogleSignInClient;
     int RC_SIGN_IN = 1;
     private TextView btnSignIn;
+    public TextView help;
     String TAG = "GoogleSignIn";
     //---------------------------------------------------
 
@@ -73,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         btnSignIn = findViewById(R.id.btnSignIn);
         mAuth = FirebaseAuth.getInstance();
-
+         help = findViewById(R.id.help);
 
         //----------------Inicio de sesion con Correo y Email------------------------
         btnSignIn.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +92,23 @@ public class MainActivity extends AppCompatActivity {
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+
+        LoginManager.getInstance().retrieveLoginStatus(this, new LoginStatusCallback() {
+            @Override
+            public void onCompleted(AccessToken accessToken) {
+                // User was previously logged in, can log them in directly here.
+                // If this callback is called, a popup notification appears that says
+                // "Logged in as <User Name>"
+            }
+            @Override
+            public void onFailure() {
+                // No access token could be retrieved for the user
+            }
+            @Override
+            public void onError(Exception exception) {
+                // An error occurred
+            }
+        });
 
 
 // Aqui empieza el inicio de sesion con Facebook
@@ -169,6 +188,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
     }
     //------------------Boton de Retroceder---------------------------------
     @Override
@@ -272,6 +292,11 @@ mAuth.addAuthStateListener(authStateListener);
 
         Intent i= new Intent(getApplicationContext(),Registrousuario.class);
         startActivity(i);
+    }
+    public void recover(View view){
+
+        Intent v= new Intent(getApplicationContext(),ForgotPassword.class);
+        startActivity(v);
     }
 
     public void iniciarsesion(View view){
