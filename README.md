@@ -1,2 +1,2 @@
-# AppPrestamosPF
- Proyecto Final UTESA Dispositivos Moviles Bryan Marc 1-19-0040
+# stickyNotes for Android
+ This is the Final Proyect of my University(UTESA) using Android Studio with Java. 
